@@ -1,9 +1,6 @@
 name: Main Kittygram workflow
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   tests:
@@ -166,6 +163,7 @@ jobs:
     - name: Copy docker-compose.yml via ssh
       uses: appleboy/scp-action@master
     # Передаём параметры для action appleboy/scp-action:
+      environment: production
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
