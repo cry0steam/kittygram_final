@@ -74,3 +74,5 @@ Kittygram — это веб-приложение для публикации и 
    ```bash
    docker-compose exec backend python manage.py migrate
    ```
+   
+#### Автор >> [Cryosteam](https://github.com/cry0steam)
