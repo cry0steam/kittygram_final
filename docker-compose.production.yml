@@ -28,6 +28,9 @@ services:
   gateway:
     image: cryosteam/kittygram_gateway
     env_file: .env
+    depents_on:
+      - backend
+      - frontend
     ports:
       - 9000:80
     volumes:
